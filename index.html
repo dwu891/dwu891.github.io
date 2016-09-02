@@ -3,6 +3,8 @@
     
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+    <title>Daria Wu - Portfolio</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
@@ -39,34 +41,35 @@
         </ul>
     </div>
     <div class="content">
-        <h2>Portfolio</h2>
         <ul class="animated fadeIn">
             <li>
-                <a href="//dwu891.github.io/project.html#stashd"><img class="thumb" src="images/stashd.jpg"></a>
-                <a href="//dwu891.github.io/project.html#stashd"><img class="thumb-hover" src="images/stashd_hover.jpg"></a>
+                <a class="change-page" href="#stashd" rel="stashd"><img class="thumb" src="images/stashd.jpg"></a>
+                <a class="change-page" href="#stashd" rel="stashd"><img class="thumb-hover" src="images/stashd_hover.jpg"></a>
             </li>
-            <li><a href="//dwu891.github.io/project.html#daily-bruin"><img class="thumb" src="images/db.jpg"></a>
-                <a href="//dwu891.github.io/project.html#daily-bruin"><img class="thumb-hover" src="images/db_hover.jpg"></a></li>
+            <li><a class="change-page" href="#daily-bruin" rel="daily-bruin"><img class="thumb" src="images/db.jpg"></a>
+                <a class="change-page" href="#daily-bruin" rel="daily-bruin"><img class="thumb-hover" src="images/db_hover.jpg"></a></li>
             <li>
-                <a href="//dwu891.github.io/project.html#acs"><img class="thumb" src="images/acs.jpg"></a>
-                <a href="//dwu891.github.io/project.html#acs"><img class="thumb-hover" src="images/acs_hover.jpg"></a>
-            </li>
-            <li>
-                <a href="//dwu891.github.io/project.html#tanms"><img class="thumb" src="images/tanms.jpg"></a>
-                <a href="//dwu891.github.io/project.html#tanms"><img class="thumb-hover" src="images/tanms_hover.jpg"></a>
+                <a class="change-page" href="#acs" rel="acs"><img class="thumb" src="images/acs.jpg"></a>
+                <a class="change-page" href="#acs" rel="acs"><img class="thumb-hover" src="images/acs_hover.jpg"></a>
             </li>
             <li>
-                <a href="//dwu891.github.io/project.html#bandf"><img class="thumb" src="images/b_and_f.jpg"></a>
-                <a href="//dwu891.github.io/project.html#bandf"><img class="thumb-hover" src="images/b_and_f_hover.jpg"></a>
+                <a class="change-page" href="#tanms" rel="tanms"><img class="thumb" src="images/tanms.jpg"></a>
+                <a class="change-page" href="#tanms" rel="tanms"><img class="thumb-hover" src="images/tanms_hover.jpg"></a>
             </li>
             <li>
-                <a href="//dwu891.github.io/project.html#fun"><img class="thumb" src="images/fun.jpg"></a>
-                <a href="//dwu891.github.io/project.html#fun"><img class="thumb-hover" src="images/fun_hover.jpg"></a>
+                <a class="change-page" href="#bandf" rel="tanms"><img class="thumb" src="images/b_and_f.jpg"></a>
+                <a class="change-page" href="#bandf" rel="tanms"><img class="thumb-hover" src="images/b_and_f_hover.jpg"></a>
+            </li>
+            <li>
+                <a class="change-page" href="#misc" rel="misc"><img class="thumb" src="images/fun.jpg"></a>
+                <a class="change-page" href="#misc" rel="misc"><img class="thumb-hover" src="images/fun_hover.jpg"></a>
             </li>
         </ul>
     </div>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/main.js"></script>
     <script>
         $(document).ready(function(){
             $("img.thumb").hover(function() {
@@ -75,10 +78,14 @@
             function() {
                 $(this).stop().animate({"opacity": "1"}, "fast");
             });
-
+        });
+        
+        $(document).on("click", '.change-page', function() {
+            var projid = $(this).attr('rel');
+            $("html, body").animate({scrollTop: $(".content").offset().top}, 500, "easeInOutQuad");
+            $(".content").hide().load('projects.html #'+projid).fadeIn(500);
         });
     </script>
-    <script src="js/main.js"></script>
 </body>
     
 </html>

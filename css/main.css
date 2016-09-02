@@ -119,9 +119,9 @@ body {
       padding: 1em 0;
       text-align: center; }
       .sidebar h1 {
-        font-size: 3em; }
+        font-size: 2em; }
       .sidebar small {
-        font-size: 1em;
+        font-size: 0.75em;
         letter-spacing: 0.2em; }
       .sidebar ul {
         display: none; } }
@@ -184,11 +184,20 @@ body {
         text-decoration: underline; }
   .content .p-nav {
     width: 70%;
-    text-align: center; }
+    min-height: 1em;
+    display: block; }
     .content .p-nav a {
-      color: gray;
+      background: #ED646C;
+      padding: 0.1em 0.5em;
+      color: #fff;
       font-weight: 300;
-      font-style: italic; }
+      font-style: italic;
+      text-decoration: none; }
+      .content .p-nav a:hover {
+        color: #49090c;
+        text-decoration: none; }
+    .content .p-nav .next {
+      float: right; }
   .content h3 {
     width: 70%;
     font-family: Oswald, Arial, sans-serif;
@@ -260,7 +269,7 @@ body {
         width: 90%; }
       .content .p-nav {
         width: 90%;
-        font-size: 1.2em; }
+        font-size: 1em; }
       .content .p-description {
         width: 90%;
         font-size: 1em; }
