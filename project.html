@@ -48,7 +48,7 @@
         $(document).ready(function ($) {
             var id = location.hash.slice(1);
             if(id) {
-                $(".content").hide().load('project-info.html #'+id, function () {
+                $(".content").hide().load('//dwu891.github.io/project-info.html #'+id, function () {
                     $('.row').css('opacity', 0);
             
                     $('.one').waypoint(function() {
@@ -63,7 +63,7 @@
                 }).fadeIn(500);
             }
             else {
-                $(".content").hide().load('project-info.html #stashd', function () {
+                $(".content").hide().load('//dwu891.github.io/project-info.html #stashd', function () {
                     $('.row').css('opacity', 0);
             
                     $('.one').waypoint(function() {
