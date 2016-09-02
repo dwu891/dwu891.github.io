@@ -47,35 +47,19 @@
     <script>
         $(document).ready(function ($) {
             var id = location.hash.slice(1);
-            if(id) {
-                $(".content").hide().load('//dwu891.github.io/project-info.html #'+id, function () {
-                    $('.row').css('opacity', 0);
-            
-                    $('.one').waypoint(function() {
-                      $('.one').addClass('animated fadeIn');
-                      $('.row one').css('opacity', 1);
-                    }, { offset: '100%' });
-                    
-                    $('.two').waypoint(function() {
-                      $('.two').addClass('animated fadeIn');
-                      $('.row two').css('opacity', 1);
-                    }, { offset: '80%' });
-                }).fadeIn(500);
-            }
-            else {
-                $(".content").hide().load('//dwu891.github.io/project-info.html #stashd', function () {
-                    $('.row').css('opacity', 0);
-            
-                    $('.one').waypoint(function() {
-                      $('.one').addClass('animated fadeIn');
-                      $('.row one').css('opacity', 1);
-                    }, { offset: '100%' });
-                    $('.two').waypoint(function() {
-                      $('.two').addClass('animated fadeIn');
-                      $('.row two').css('opacity', 1);
-                    }, { offset: '80%' });
-                }).fadeIn(500);
-            }
+            $(".content").hide().load('//dwu891.github.io/project-info.html #'+id, function () {
+                $('.row').css('opacity', 0);
+
+                $('.one').waypoint(function() {
+                  $('.one').addClass('animated fadeIn');
+                  $('.row one').css('opacity', 1);
+                }, { offset: '100%' });
+
+                $('.two').waypoint(function() {
+                  $('.two').addClass('animated fadeIn');
+                  $('.row two').css('opacity', 1);
+                }, { offset: '80%' });
+            }).fadeIn(500);
         });
     </script>
 </body>
