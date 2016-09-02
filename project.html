@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+</head>
+    
+<body>
+    <ul id="mobile-nav">
+        <li><a href="/index.html">Portfolio</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+    </ul>
+    <div class="sidebar">
+        <a id="menu-btn" href="#">Menu</a>
+        <a href="/index.html">
+            <h1>
+                <span class="first-name">DARIA</span> 
+                <span class="last-name">WU</span>
+            </h1>
+            <small>Front-End Web Developer</small>
+        </a>
+        <ul>
+            <li>
+                <a href="/index.html">&lt; Back to Portfolio</a> 
+            </li>
+            <li>
+                <a href="/about.html">About</a>
+            </li>
+            <li>
+                <a href="/contact.html">Contact</a>
+            </li>
+            <li>
+                Coded with love by Daria Wu.
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>           
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script>
+        $(document).ready(function ($) {
+            var id = location.hash.slice(1);
+            if(id) {
+                $(".content").hide().load('project-info.html #'+id, function () {
+                    $('.row').css('opacity', 0);
+            
+                    $('.one').waypoint(function() {
+                      $('.one').addClass('animated fadeIn');
+                      $('.row one').css('opacity', 1);
+                    }, { offset: '100%' });
+                    
+                    $('.two').waypoint(function() {
+                      $('.two').addClass('animated fadeIn');
+                      $('.row two').css('opacity', 1);
+                    }, { offset: '80%' });
+                }).fadeIn(500);
+            }
+            else {
+                $(".content").hide().load('project-info.html #stashd', function () {
+                    $('.row').css('opacity', 0);
+            
+                    $('.one').waypoint(function() {
+                      $('.one').addClass('animated fadeIn');
+                      $('.row one').css('opacity', 1);
+                    }, { offset: '100%' });
+                    $('.two').waypoint(function() {
+                      $('.two').addClass('animated fadeIn');
+                      $('.row two').css('opacity', 1);
+                    }, { offset: '80%' });
+                }).fadeIn(500);
+            }
+        });
+    </script>
+</body>
+    
+</html>
