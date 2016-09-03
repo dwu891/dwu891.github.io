@@ -447,15 +447,16 @@ body {
     }
     @media only screen and (max-width: 1010px) {
         width: 90%;
+        margin: 0 auto;
+        text-align: center;
     }
     @media only screen and (max-width: 600px) {
         width: 90%;
-        text-align: center;
         input[name="name"], input[name="email"] {
-            width: 80%;
+            width: 100%;
         }
         input[name="subject"] {
-            width: 80%;
+            width: 100%;
         }
         textarea {
             font-size: 1.3em;
