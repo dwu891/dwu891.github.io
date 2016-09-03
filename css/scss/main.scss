@@ -452,11 +452,12 @@ body {
     }
     @media only screen and (max-width: 600px) {
         width: 90%;
+        text-align: left;
         input[name="name"], input[name="email"] {
-            width: 100%;
+            width: 90%;
         }
         input[name="subject"] {
-            width: 100%;
+            width: 90%;
         }
         textarea {
             font-size: 1.3em;
