@@ -41,10 +41,12 @@ body {
   font-family: Calibri, Arial, sans-serif;
   text-decoration: none;
   font-weight: 300;
-  padding: 1em 0; }
+  padding: 0.25em 0 0;
+  float: right;
+  margin-right: 1.5em; }
   @media only screen and (max-width: 500px) {
     #menu-btn {
-      display: block; } }
+      display: inline-block; } }
 
 .sidebar {
   position: fixed;
@@ -110,19 +112,23 @@ body {
       letter-spacing: 0.1em; } }
   @media only screen and (max-width: 500px) {
     .sidebar {
-      position: relative;
+      position: fixed;
       display: block;
       height: auto;
       width: 100%;
       overflow: hidden;
       float: none;
       padding: 1em 0;
-      text-align: center; }
+      text-align: center;
+      border-bottom: 1px solid #dbd9d4;
+      z-index: 10;
+      background-color: #fff; }
       .sidebar h1 {
-        font-size: 2em; }
+        font-size: 1.25em;
+        float: left;
+        margin-left: 1em; }
       .sidebar small {
-        font-size: 0.75em;
-        letter-spacing: 0.2em; }
+        display: none; }
       .sidebar ul {
         display: none; } }
 
@@ -185,7 +191,8 @@ body {
   .content .p-nav {
     width: 70%;
     min-height: 1em;
-    display: block; }
+    display: block;
+    margin-top: 3em; }
     .content .p-nav a {
       background: #ED646C;
       padding: 0.1em 0.5em;
@@ -260,10 +267,11 @@ body {
         font-size: 1em;
         line-height: 1.4em; }
       .content ul {
-        margin: 0 auto;
+        margin: 3em auto;
         width: 90%; }
         .content ul li {
-          width: 50%; }
+          width: 48%;
+          margin: 0.5% 1%; }
       .content h3 {
         margin: 3em auto 0;
         width: 90%; }

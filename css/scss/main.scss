@@ -51,9 +51,11 @@ body {
     font-family: Calibri, Arial, sans-serif;
     text-decoration: none;
     font-weight: 300;
-    padding: 1em 0;
+    padding: 0.25em 0 0;
+    float: right;
+    margin-right: 1.5em;
     @media only screen and (max-width: 500px) {
-        display: block;
+        display: inline-block;
     }
 }
 
@@ -138,7 +140,7 @@ body {
         }
     }
     @media only screen and (max-width: 500px) {
-        position: relative;
+        position: fixed;
         display: block;
         height: auto;
         width: 100%;
@@ -146,12 +148,17 @@ body {
         float: none;
         padding: 1em 0;
         text-align: center;
+        border-bottom: 1px solid #dbd9d4;
+        z-index: 10;
+        background-color: #fff;
         h1 {
-            font-size: 2em;
+            font-size: 1.25em;
+            float: left;
+            margin-left: 1em;
         }
+        
         small {
-            font-size: 0.75em;
-            letter-spacing: 0.2em;
+            display: none;
         }
         ul {
             display: none;
@@ -231,6 +238,7 @@ body {
         width: 70%;
         min-height: 1em;
         display: block;
+        margin-top: 3em;
         a {
             background: $palette-color-1;
             padding: 0.1em 0.5em;
@@ -324,10 +332,11 @@ body {
             line-height: 1.4em;
         }
         ul {
-            margin: 0 auto;
+            margin: 3em auto;
             width: 90%;
             li {
-                width: 50%;
+                width: 48%;
+                margin: 0.5% 1%;
             }
         }
         h3 {
