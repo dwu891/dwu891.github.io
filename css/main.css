@@ -105,11 +105,13 @@ body {
       .sidebar small {
         letter-spacing: 0.3em; } }
   @media only screen and (max-width: 768px) {
-    .sidebar h1 {
-      font-size: 1.8em; }
-    .sidebar small {
-      font-size: 0.7em;
-      letter-spacing: 0.1em; } }
+    .sidebar {
+      padding: 3em 0 0 2em; }
+      .sidebar h1 {
+        font-size: 1.8em; }
+      .sidebar small {
+        font-size: 0.7em;
+        letter-spacing: 0.1em; } }
   @media only screen and (max-width: 500px) {
     .sidebar {
       position: fixed;
@@ -136,7 +138,7 @@ body {
   width: 70%;
   display: inline-block;
   float: right;
-  padding: 3em 0; }
+  padding: 4em 0; }
   .content ul {
     width: 75%;
     list-style-type: none;
