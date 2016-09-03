@@ -192,7 +192,7 @@ body {
         text-decoration: underline; }
   .content .p-nav {
     width: 70%;
-    min-height: 3em;
+    min-height: 2em;
     display: block;
     margin-top: 3em; }
     .content .p-nav a {
