@@ -237,12 +237,12 @@ body {
     }
     .p-nav {
         width: 70%;
-        min-height: 1em;
+        min-height: 3em;
         display: block;
         margin-top: 3em;
         a {
             background: $palette-color-1;
-            padding: 0.1em 0.5em;
+            padding: 0.3em 1em;
             color: #fff;
             font-weight: 300;
             font-style: italic;
@@ -251,6 +251,9 @@ body {
                 color: darken($palette-color-1, 50%);
                 text-decoration: none;
             }
+        }
+        .prev {
+            float: left;
         }
         .next {
             float: right;
