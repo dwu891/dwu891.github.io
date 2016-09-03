@@ -369,9 +369,9 @@ body {
       width: 90%;
       text-align: left; }
       #contact-form input[name="name"], #contact-form input[name="email"] {
-        width: 90%; }
+        width: 80%; }
       #contact-form input[name="subject"] {
-        width: 90%; }
+        width: 80%; }
       #contact-form textarea {
         font-size: 1.3em;
         width: 100%;
