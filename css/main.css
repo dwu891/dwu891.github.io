@@ -36,7 +36,7 @@ body {
         color: #49090c; }
   @media only screen and (max-width: 500px) {
     #mobile-nav {
-      position: absolute;
+      position: fixed;
       width: 100%;
       margin-top: 3.7em;
       z-index: 10; } }
