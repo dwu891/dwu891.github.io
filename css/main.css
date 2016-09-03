@@ -178,7 +178,8 @@ body {
   .content small {
     font-family: Calibri, Arial, serif;
     font-style: italic;
-    font-size: 0.7em; }
+    font-size: 0.7em;
+    display: block; }
   .content p {
     font-family: Georgia, serif;
     width: 70%;
@@ -216,6 +217,7 @@ body {
     font-size: 1em;
     letter-spacing: 0.2em; }
   .content .p-description {
+    display: block;
     width: 70%;
     font-family: Georgia, serif;
     font-size: 0.8em;
