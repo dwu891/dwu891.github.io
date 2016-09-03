@@ -72,13 +72,15 @@
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-        $(document).ready(function(){
-            $("img.thumb").hover(function() {
-                $(this).stop().animate({"opacity": "0"}, "fast");
-            },
-            function() {
-                $(this).stop().animate({"opacity": "1"}, "fast");
-            });
+        $(window).resize(function() {
+            if($(window).width() > 768) {
+                $("img.thumb").hover(function() {
+                    $(this).stop().animate({"opacity": "0"}, "fast");
+                },
+                function() {
+                    $(this).stop().animate({"opacity": "1"}, "fast");
+                });
+            }
         });
         
         $(document).on("click", '.change-page', function() {
