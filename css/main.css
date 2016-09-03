@@ -328,8 +328,9 @@ body {
     border-radius: 0;
     background: #ED646C;
     color: #fff;
-    font-size: 5em;
-    font-family: HenryMorganHand, Georgia, serif;
+    font-size: 3.5em;
+    font-weight: 300;
+    font-family: 'Dancing Script', cursive;
     cursor: pointer;
     -webkit-appearance: none;
     -moz-appearance: none;
