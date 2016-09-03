@@ -217,10 +217,13 @@ body {
         letter-spacing: 0.2em;
     }
     small {
-        font-family: Calibri, Arial, serif;
-        font-style: italic;
+        font-family: Georgia, serif;
+        color: dimgray;
         font-size: 0.7em;
         display: block;
+        width: 70%;
+        margin: 0;
+        text-align: justify;
     }
     p {
         font-family: Georgia, serif;
@@ -267,11 +270,20 @@ body {
         font-size: 1em;
         letter-spacing: 0.2em;
     }
+    .p-gallery {
+        clear: both;
+        overflow: auto;
+    }
+    .p-details {
+        padding-top: 4em;
+    }
     .p-description {
         display: block;
         width: 70%;
         font-family: Georgia, serif;
-        font-size: 0.8em;
+        font-size: 0.7em;
+        line-height: 1.3em;
+        letter-spacing: 0.1em;
         text-align: justify;
     }
     .p-img {
@@ -315,6 +327,10 @@ body {
         width: 100%;
         margin: 0 auto;
         text-align: center;
+        small {
+            width: 90%;
+            margin: 0 auto;
+        }
         h2 {
             text-align: center;
             margin: 0 auto 1em;
