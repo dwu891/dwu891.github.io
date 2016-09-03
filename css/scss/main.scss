@@ -411,6 +411,9 @@ body {
         font-size: 5em;
         font-family: HenryMorganHand, Georgia, serif;
         cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;  
         &:hover {
             opacity: 0.7;
         }
