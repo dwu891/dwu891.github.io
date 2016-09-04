@@ -113,6 +113,7 @@ body {
         letter-spacing: 0.3em; } }
   @media only screen and (max-width: 768px) {
     .sidebar {
+      position: relative;
       padding: 2em 0 0 2em; }
       .sidebar h1 {
         font-size: 1.8em; }
@@ -266,20 +267,23 @@ body {
     .content {
       width: 60%; } }
   @media only screen and (max-width: 768px) {
-    .content h3 {
-      width: 90%; }
-    .content .p-nav {
-      width: 90%;
-      font-size: 1.2em; }
-    .content .p-description {
-      width: 90%;
-      font-size: 1em; }
-    .content .p-img {
-      float: none; }
-    .content .half {
-      width: 90%; }
-    .content .full {
-      width: 90%; } }
+    .content {
+      padding: 0; }
+      .content h3 {
+        width: 90%; }
+      .content .p-nav {
+        width: 90%;
+        font-size: 1.2em;
+        margin-top: 2em; }
+      .content .p-description {
+        width: 90%;
+        font-size: 1em; }
+      .content .p-img {
+        float: none; }
+      .content .half {
+        width: 90%; }
+      .content .full {
+        width: 90%; } }
   @media only screen and (max-width: 500px) {
     .content {
       float: none;
@@ -318,7 +322,8 @@ body {
         width: 90%; }
       .content .p-nav {
         width: 90%;
-        font-size: 1em; }
+        font-size: 1em;
+        margin-top: 5em; }
       .content .p-description {
         width: 90%;
         font-size: 1em; }

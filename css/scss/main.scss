@@ -139,6 +139,7 @@ body {
         }
     }
     @media only screen and (max-width: 768px) {
+        position: relative;
         padding: 2em 0 0 2em;
         h1 {
             font-size: 1.8em;
@@ -326,12 +327,14 @@ body {
         width: 60%;
     }
     @media only screen and (max-width: 768px) {
+        padding: 0;
         h3 {
             width: 90%;
         }
         .p-nav {
             width: 90%;
             font-size: 1.2em;
+            margin-top: 2em;
         }
         .p-description {
             width: 90%;
@@ -393,6 +396,7 @@ body {
         .p-nav {
             width: 90%;
             font-size: 1em;
+            margin-top: 5em;
         }
         .p-description {
             width: 90%;
