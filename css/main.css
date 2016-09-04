@@ -38,7 +38,7 @@ body {
     #mobile-nav {
       position: fixed;
       width: 100%;
-      margin-top: 3.7em;
+      margin-top: 3.8em;
       z-index: 10; } }
 
 #menu-btn {
@@ -63,6 +63,8 @@ body {
   .sidebar a {
     text-decoration: none;
     color: #000; }
+  .sidebar .back {
+    display: none; }
   .sidebar h1 {
     font-family: Oswald, Arial, sans-serif;
     font-weight: bold;
@@ -130,10 +132,25 @@ body {
       border-bottom: 1px solid #dbd9d4;
       z-index: 20;
       background-color: #fff; }
-      .sidebar h1 {
-        font-size: 1.25em;
+      .sidebar .back {
         float: left;
-        margin-left: 1em; }
+        display: inline-block;
+        padding: 0.2em 0 0 1em;
+        text-align: center;
+        font-size: 1em;
+        font-family: Calibri, Arial, sans-serif;
+        font-weight: 300; }
+        .sidebar .back a {
+          text-decoration: none;
+          color: #fff;
+          background: #ED646C; }
+          .sidebar .back a:hover {
+            text-decoration: none; }
+      .sidebar h1 {
+        float: left;
+        display: inline-block;
+        font-size: 1.25em;
+        margin-left: 1.25em; }
       .sidebar small {
         display: none; }
       .sidebar ul {

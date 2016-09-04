@@ -43,8 +43,8 @@
     <div class="content">
         <ul class="animated fadeIn">
             <li>
-                <a class="change-page" href="#stashd" rel="stashd"><img class="thumb" src="images/stashd.jpg"></a>
-                <a class="change-page" href="#stashd" rel="stashd"><img class="thumb-hover" src="images/stashd_hover.jpg"></a>
+                <a class="change-page" href="/project.html#stashd" rel="stashd"><img class="thumb" src="images/stashd.jpg"></a>
+                <a class="change-page" href=".project.html#stashd" rel="stashd"><img class="thumb-hover" src="images/stashd_hover.jpg"></a>
             </li>
             <li><a class="change-page" href="#daily-bruin" rel="daily-bruin"><img class="thumb" src="images/db.jpg"></a>
                 <a class="change-page" href="#daily-bruin" rel="daily-bruin"><img class="thumb-hover" src="images/db_hover.jpg"></a></li>
@@ -72,7 +72,7 @@
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-        $(window).resize(function() {
+        $(window).on("load",function() {
             if($(window).width() > 768) {
                 $("img.thumb").hover(function() {
                     $(this).stop().animate({"opacity": "0"}, "fast");
@@ -83,20 +83,6 @@
             }
         });
         
-        $(document).on("click", '.change-page', function() {
-            var projid = $(this).attr('rel');
-            $(".content").hide().load('projects.html #'+projid, function() {
-                $('.p-img').css('opacity',0);
-                $("html, body").animate({scrollTop: $(".sidebar").offset().top}, 500, "easeInOutQuad");
-                $('.p-img').each(function(i){
-                   var img = $(this);
-                    setTimeout(function() {
-                       img.addClass("animated fadeIn"); 
-                        img.css('opacity',1);
-                    }, 500*i);
-                });
-            }).fadeIn(500);
-        });
     </script>
 </body>
     

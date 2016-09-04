@@ -46,7 +46,7 @@ body {
     @media only screen and (max-width: 500px) {
         position: fixed;
         width: 100%;
-        margin-top: 3.7em;
+        margin-top: 3.8em;
         z-index: 10;
     }
 }
@@ -75,6 +75,9 @@ body {
     a {
         text-decoration: none;
         color: #000;
+    }
+    .back {
+        display: none;
     }
     h1 {
         font-family: Oswald, Arial, sans-serif;
@@ -157,12 +160,29 @@ body {
         border-bottom: 1px solid #dbd9d4;
         z-index: 20;
         background-color: #fff;
-        h1 {
-            font-size: 1.25em;
+        .back {
             float: left;
-            margin-left: 1em;
+            display: inline-block;
+            padding: 0.2em 0 0 1em;
+            text-align: center;
+            font-size: 1em;
+            font-family: Calibri, Arial, sans-serif;
+            font-weight: 300;
+            a {
+                text-decoration: none;
+                color: #fff;
+                background: $palette-color-1;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
         }
-        
+        h1 {
+            float: left;
+            display: inline-block;
+            font-size: 1.25em;
+            margin-left: 1.25em;
+        }
         small {
             display: none;
         }
@@ -402,7 +422,7 @@ body {
         display: block;
         margin: 1em 0 0.1em;
         letter-spacing: 0.1em;
-        font-weight: 300
+        font-weight: 300;
     }
     input, textarea {
         margin: 0.5em 0;
