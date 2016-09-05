@@ -1,5 +1,24 @@
+/* 
+    ==TABLE OF CONTENTS==
+
+    [1] GENERAL STYLES
+    [2] SIDEBAR STYLES
+        [2a] MOBILE NAVIGATION STYLES
+        [2b] DESKTOP & TABLET NAVIGATION STYLES
+    [3] CONTENT STYLES
+        [3a] GENERAL CONTENT SECTION STYLES
+        [3b] PORTFOLIO SPECIFIC STYLES
+        [3c] ABOUT PAGE SPECIFIC STYLES
+        [3d] PROJECT PAGE SPECIFIC STYLES
+            [3di] PROJECT IMAGE STYLES
+            [3dii] PROJECT DETAILS STYLES
+        [3e] CONTACT PAGE SPECIFIC STYLES
+
+*/
+
+
 /********************************
- GENERAL STYLES
+ [1] GENERAL STYLES
 ********************************/
 $palette-color-1: #ED646C;
 
@@ -8,9 +27,13 @@ body {
 }
 
 /********************************
- SIDEBAR STYLES
+ [2] SIDEBAR STYLES
 ********************************/
 
+/* [2a] MOBILE NAVIGATION STYLES */
+
+// Styles for mobile dropdown menu
+// Mobile navigation menu only appears for screens of width 500px or less
 #mobile-nav {
     display: none;
     margin: 0;
@@ -51,6 +74,8 @@ body {
     }
 }
 
+// Styles for mobile menu button
+// Button appears only for screens of width 500px or less
 #menu-btn {
     display: none;
     color: #000;
@@ -65,17 +90,20 @@ body {
     }
 }
 
-//Sidebar positioning
+
+/* [2b] DESKTOP & TABLET NAVIGATION STYLES */
+
+// Styles for text and links in sidebar
+// Sidebar appears for screen widths greater than 500px
+// For screen widths at or less than 500px sidebar shrinks into fixed top bar
+// Styles are ordered to reflect structure of html as closely as possible
 .sidebar {
+    // General side bar styles
     position: fixed;
     height: 100vh;
     width: 20%;
     float: left;
     padding: 3em 0 0 3em;
-    a {
-        text-decoration: none;
-        color: #000;
-    }
     .back {
         display: none;
     }
@@ -97,6 +125,10 @@ body {
         font-weight: 300;
         text-transform: uppercase;
         letter-spacing: 0.3em;
+    }
+    a {
+        text-decoration: none;
+        color: #000;
     }
     ul {
         list-style-type: none;
@@ -193,11 +225,41 @@ body {
     }
 }
 
+/********************************
+ [3] CONTENT STYLES
+********************************/
+
 .content {
     width: 70%;
     display: inline-block;
     float: right;
     padding: 4em 0;
+
+    // [3a] GENERAL CONTENT SECTION STYLES
+    h2 {
+        font-family: Oswald, Arial, sans-serif;
+        font-weight: bold;
+        font-size: 0.8em;
+        text-transform: uppercase;
+        width: 70%;
+        letter-spacing: 0.2em;
+    }
+    p {
+        font-family: Georgia, serif;
+        width: 70%;
+        font-size: 0.8em;
+        line-height: 1.5em;
+        a {
+            color: $palette-color-1;
+            text-decoration: none;
+            font-weight: bold;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    
+    // [3b] PORTFOLIO SPECIFIC STYLES
     ul {
         width: 75%;
         list-style-type: none;
@@ -219,14 +281,8 @@ body {
             }
         }
     }
-    h2 {
-        font-family: Oswald, Arial, sans-serif;
-        font-weight: bold;
-        font-size: 0.8em;
-        text-transform: uppercase;
-        width: 70%;
-        letter-spacing: 0.2em;
-    }
+
+    // [3c] ABOUT PAGE SPECIFIC STYLES
     #about-img {
         width: 70%;
         display: block;
@@ -243,6 +299,8 @@ body {
         text-transform: uppercase;
         letter-spacing: 0.2em;
     }
+
+    // [3d] PROJECT PAGE SPECIFIC STYLES
     small {
         font-family: Georgia, serif;
         color: dimgray;
@@ -251,21 +309,7 @@ body {
         width: 70%;
         text-align: justify;
         letter-spacing: 0.05em;
-    }
-    p {
-        font-family: Georgia, serif;
-        width: 70%;
-        font-size: 0.8em;
-        line-height: 1.5em;
-        a {
-            color: $palette-color-1;
-            text-decoration: none;
-            font-weight: bold;
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-    }
+    }    
     .p-nav {
         width: 70%;
         min-height: 2em;
@@ -297,20 +341,10 @@ body {
         font-size: 1em;
         letter-spacing: 0.2em;
     }
+    // [3di] PROJECT IMAGE STYLES
     .p-gallery {
         clear: both;
         overflow: auto;
-    }
-    .p-details {
-        padding-top: 4em;
-    }
-    .p-description {
-        display: block;
-        width: 70%;
-        font-family: Georgia, serif;
-        font-size: 0.7em;
-        line-height: 1.3em;
-        letter-spacing: 0.1em;
     }
     .p-img {
         float: left;
@@ -322,6 +356,18 @@ body {
     }
     .half {
         width: 35%;
+    }
+    // [3dii] PROJECT DETAILS STYLES
+    .p-details {
+        padding-top: 4em;
+    }
+    .p-description {
+        display: block;
+        width: 70%;
+        font-family: Georgia, serif;
+        font-size: 0.7em;
+        line-height: 1.3em;
+        letter-spacing: 0.1em;
     }
     @media only screen and (max-width: 1200px) {
         width: 60%;
@@ -414,6 +460,7 @@ body {
     }
 }
 
+// [3e] CONTACT FORM SPECIFIC STYLES
 #contact-form {
     width: 70%;
     font-family: Georgia, serif;

@@ -1,12 +1,30 @@
+/* 
+    ==TABLE OF CONTENTS==
+
+    [1] GENERAL STYLES
+    [2] SIDEBAR STYLES
+        [2a] MOBILE NAVIGATION STYLES
+        [2b] DESKTOP & TABLET NAVIGATION STYLES
+    [3] CONTENT STYLES
+        [3a] GENERAL CONTENT SECTION STYLES
+        [3b] PORTFOLIO SPECIFIC STYLES
+        [3c] ABOUT PAGE SPECIFIC STYLES
+        [3d] PROJECT PAGE SPECIFIC STYLES
+            [3di] PROJECT IMAGE STYLES
+            [3dii] PROJECT DETAILS STYLES
+        [3e] CONTACT PAGE SPECIFIC STYLES
+
+*/
 /********************************
- GENERAL STYLES
+ [1] GENERAL STYLES
 ********************************/
 body {
   margin: 0; }
 
 /********************************
- SIDEBAR STYLES
+ [2] SIDEBAR STYLES
 ********************************/
+/* [2a] MOBILE NAVIGATION STYLES */
 #mobile-nav {
   display: none;
   margin: 0;
@@ -54,15 +72,13 @@ body {
     #menu-btn {
       display: inline-block; } }
 
+/* [2b] DESKTOP & TABLET NAVIGATION STYLES */
 .sidebar {
   position: fixed;
   height: 100vh;
   width: 20%;
   float: left;
   padding: 3em 0 0 3em; }
-  .sidebar a {
-    text-decoration: none;
-    color: #000; }
   .sidebar .back {
     display: none; }
   .sidebar h1 {
@@ -80,6 +96,9 @@ body {
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 0.3em; }
+  .sidebar a {
+    text-decoration: none;
+    color: #000; }
   .sidebar ul {
     list-style-type: none;
     padding: 0; }
@@ -157,11 +176,32 @@ body {
       .sidebar ul {
         display: none; } }
 
+/********************************
+ [3] CONTENT STYLES
+********************************/
 .content {
   width: 70%;
   display: inline-block;
   float: right;
   padding: 4em 0; }
+  .content h2 {
+    font-family: Oswald, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    width: 70%;
+    letter-spacing: 0.2em; }
+  .content p {
+    font-family: Georgia, serif;
+    width: 70%;
+    font-size: 0.8em;
+    line-height: 1.5em; }
+    .content p a {
+      color: #ED646C;
+      text-decoration: none;
+      font-weight: bold; }
+      .content p a:hover {
+        text-decoration: underline; }
   .content ul {
     width: 75%;
     list-style-type: none;
@@ -179,13 +219,6 @@ body {
         z-index: 10; }
       .content ul li .thumb-hover {
         width: 100%; }
-  .content h2 {
-    font-family: Oswald, Arial, sans-serif;
-    font-weight: bold;
-    font-size: 0.8em;
-    text-transform: uppercase;
-    width: 70%;
-    letter-spacing: 0.2em; }
   .content #about-img {
     width: 70%;
     display: block; }
@@ -207,17 +240,6 @@ body {
     width: 70%;
     text-align: justify;
     letter-spacing: 0.05em; }
-  .content p {
-    font-family: Georgia, serif;
-    width: 70%;
-    font-size: 0.8em;
-    line-height: 1.5em; }
-    .content p a {
-      color: #ED646C;
-      text-decoration: none;
-      font-weight: bold; }
-      .content p a:hover {
-        text-decoration: underline; }
   .content .p-nav {
     width: 70%;
     min-height: 2em;
@@ -246,6 +268,14 @@ body {
   .content .p-gallery {
     clear: both;
     overflow: auto; }
+  .content .p-img {
+    float: left;
+    margin: 2em 0 0;
+    vertical-align: top; }
+  .content .full {
+    width: 70%; }
+  .content .half {
+    width: 35%; }
   .content .p-details {
     padding-top: 4em; }
   .content .p-description {
@@ -255,14 +285,6 @@ body {
     font-size: 0.7em;
     line-height: 1.3em;
     letter-spacing: 0.1em; }
-  .content .p-img {
-    float: left;
-    margin: 2em 0 0;
-    vertical-align: top; }
-  .content .full {
-    width: 70%; }
-  .content .half {
-    width: 35%; }
   @media only screen and (max-width: 1200px) {
     .content {
       width: 60%; } }
