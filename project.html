@@ -97,7 +97,7 @@
             var projid = $(this).attr('rel');
             $(".content").hide().load('projects.html #'+projid, function() {
                 $('.p-img').css('opacity',0);
-                $("html, body").animate({scrollTop: $(".sidebar").offset().top}, 500, "easeInOutQuad");
+                $("html, body").animate({scrollTop: $(".content").offset().top-100}, 500, "easeInOutQuad");
                 $('.p-img').each(function(i){
                    var img = $(this);
                     setTimeout(function() {
