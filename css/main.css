@@ -374,7 +374,7 @@ body {
     border: 1px solid #e0e0e0;
     border-radius: 5px;
     -webkit-box-shadow: 3px 3px 0px rgba(93, 53, 57, 0.3);
-    -mox-box-shadow: 3px 3px 0px rgba(93, 53, 57, 0.3);
+    -moz-box-shadow: 3px 3px 0px rgba(93, 53, 57, 0.3);
     box-shadow: 3px 3px 0px rgba(93, 53, 57, 0.3); }
   #contact-form input {
     font-size: 1em;
