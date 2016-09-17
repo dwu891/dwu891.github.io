@@ -44,11 +44,8 @@ body {
     #mobile-nav li a {
       color: #fff;
       text-decoration: none;
-      font-family: Oswald, Arial, sans-serif;
-      font-weight: 200;
+      font: 200 1.25em/2em Oswald, Arial, sans-serif;
       letter-spacing: 0.1em;
-      font-size: 1.25em;
-      line-height: 2em;
       text-transform: uppercase; }
       #mobile-nav li a:hover {
         color: #49090c; }
@@ -56,15 +53,15 @@ body {
     #mobile-nav {
       position: fixed;
       width: 100%;
-      margin-top: 3.8em;
+      margin-top: 3.5em;
       z-index: 10; } }
 
 #menu-btn {
   display: none;
   color: #000;
   font-family: Calibri, Arial, sans-serif;
-  text-decoration: none;
   font-weight: 300;
+  text-decoration: none;
   padding: 0.25em 0 0;
   float: right;
   margin-right: 1.5em; }
@@ -82,9 +79,7 @@ body {
   .sidebar .back {
     display: none; }
   .sidebar h1 {
-    font-family: Oswald, Arial, sans-serif;
-    font-weight: bold;
-    font-size: 3em;
+    font: bold 3em/100% Oswald, Arial, sans-serif;
     letter-spacing: 0.1em;
     margin: 0; }
     .sidebar h1 .first-name {
@@ -116,11 +111,9 @@ body {
         margin-top: 0.5em;
         padding-top: 2em; }
       .sidebar ul li a {
-        font-family: Georgia, serif;
-        font-weight: 300;
+        font: 300 0.8em/100% Georgia, serif;
         text-decoration: none;
-        color: #000;
-        font-size: 0.8em; }
+        color: #000; }
         .sidebar ul li a:hover {
           color: #ED646C; }
   @media only screen and (max-width: 1200px) {
@@ -157,9 +150,7 @@ body {
         display: inline-block;
         padding: 0.2em 0 0 1em;
         text-align: center;
-        font-size: 1em;
-        font-family: Calibri, Arial, sans-serif;
-        font-weight: 300; }
+        font: 300 1em/100% Calibri, Arial, sans-serif; }
         .sidebar .back a {
           text-decoration: none;
           color: #fff;
@@ -185,17 +176,13 @@ body {
   float: right;
   padding: 4em 0; }
   .content h2 {
-    font-family: Oswald, Arial, sans-serif;
-    font-weight: bold;
-    font-size: 0.8em;
+    font: bold 0.8em/100% Oswald, Arial, sans-serif;
     text-transform: uppercase;
     width: 70%;
     letter-spacing: 0.2em; }
   .content p {
-    font-family: Georgia, serif;
-    width: 70%;
-    font-size: 0.8em;
-    line-height: 1.5em; }
+    font: 0.8em/1.5em Georgia, serif;
+    width: 70%; }
     .content p a {
       color: #ED646C;
       text-decoration: none;
@@ -233,9 +220,8 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.2em; }
   .content small {
-    font-family: Georgia, serif;
+    font: 0.8em/100% Georgia, serif;
     color: dimgray;
-    font-size: 0.8em;
     display: block;
     width: 70%;
     text-align: justify;
@@ -261,9 +247,8 @@ body {
       float: right; }
   .content h3 {
     width: 70%;
-    font-family: Oswald, Arial, sans-serif;
+    font: 1em/100% Oswald, Arial, sans-serif;
     text-transform: uppercase;
-    font-size: 1em;
     letter-spacing: 0.2em; }
   .content .p-gallery {
     clear: both;
@@ -281,8 +266,7 @@ body {
   .content .p-description {
     display: block;
     width: 70%;
-    font-family: Georgia, serif;
-    font-size: 0.7em;
+    font: 0.7em/100% Georgia, serif;
     line-height: 1.3em;
     letter-spacing: 0.1em; }
   @media only screen and (max-width: 1200px) {
@@ -327,12 +311,10 @@ body {
         padding: 0.05em 0.2em;
         margin: 0 0.25em 0 0.3em; }
       .content p {
-        font-family: Georgia, serif;
+        font: 1em/1.4em Georgia, serif;
         text-align: left;
         margin: 1em auto;
-        width: 90%;
-        font-size: 1em;
-        line-height: 1.4em; }
+        width: 90%; }
       .content ul {
         margin: 0 auto;
         width: 90%; }
@@ -358,17 +340,16 @@ body {
 
 #contact-form {
   width: 70%;
-  font-family: Georgia, serif;
-  font-size: 0.8em;
+  font: 0.8em/100% Georgia, serif;
   text-align: left;
   padding: 1em 0 0; }
   #contact-form label {
     font-family: Calibri, Arial, sans-serif;
+    font-weight: 300;
     text-align: left;
     display: block;
     margin: 1em 0 0.1em;
-    letter-spacing: 0.1em;
-    font-weight: 300; }
+    letter-spacing: 0.1em; }
   #contact-form input, #contact-form textarea {
     margin: 0.5em 0;
     border: 1px solid #e0e0e0;
@@ -394,9 +375,7 @@ body {
     border-radius: 0;
     background: #ED646C;
     color: #fff;
-    font-size: 3.5em;
-    font-weight: 300;
-    font-family: 'Dancing Script', cursive;
+    font: 300 3.5em/100% 'Dancing Script', cursive;
     cursor: pointer;
     -webkit-appearance: none;
     -moz-appearance: none;

@@ -55,11 +55,8 @@ body {
         a {
             color: #fff;
             text-decoration: none;
-            font-family: Oswald, Arial, sans-serif;
-            font-weight: 200;
+            font: 200 1.25em/2em Oswald, Arial, sans-serif;
             letter-spacing: 0.1em;
-            font-size: 1.25em;
-            line-height: 2em;
             text-transform: uppercase;
             &:hover {
                 color: darken($palette-color-1, 50%);
@@ -69,7 +66,7 @@ body {
     @media only screen and (max-width: 500px) {
         position: fixed;
         width: 100%;
-        margin-top: 3.8em;
+        margin-top: 3.5em;
         z-index: 10;
     }
 }
@@ -79,9 +76,11 @@ body {
 #menu-btn {
     display: none;
     color: #000;
-    font-family: Calibri, Arial, sans-serif;
+    font: {
+        family: Calibri, Arial, sans-serif;
+        weight: 300;
+    }
     text-decoration: none;
-    font-weight: 300;
     padding: 0.25em 0 0;
     float: right;
     margin-right: 1.5em;
@@ -108,9 +107,7 @@ body {
         display: none;
     }
     h1 {
-        font-family: Oswald, Arial, sans-serif;
-        font-weight: bold;
-        font-size: 3em;
+        font: bold 3em/100% Oswald, Arial, sans-serif;
         letter-spacing: 0.1em;
         margin: 0;
         .first-name {
@@ -121,8 +118,12 @@ body {
         }
     }
     small {
-        font-family: Oswald, Arial, sans-serif;
-        font-weight: 300;
+        font: {
+            family: Oswald, Arial, sans-serif;
+            weight: 300;
+        }
+        //font-family: Oswald, Arial, sans-serif;
+        //font-weight: 300;
         text-transform: uppercase;
         letter-spacing: 0.3em;
     }
@@ -144,17 +145,17 @@ body {
             }
             &:last-child {
                 border-top: 1px solid #dbd9d4;
-                font-size: 0.8em;
-                font-style: italic;
+                font: {
+                    size: 0.8em;
+                    style: italic;
+                }
                 margin-top: 0.5em;
                 padding-top: 2em;
             }
             a {
-                font-family: Georgia, serif;
-                font-weight: 300;
+                font: 300 0.8em/100% Georgia, serif;
                 text-decoration: none;
                 color: #000;
-                font-size: 0.8em;
                 &:hover {
                     color: $palette-color-1;
                 }
@@ -198,9 +199,7 @@ body {
             display: inline-block;
             padding: 0.2em 0 0 1em;
             text-align: center;
-            font-size: 1em;
-            font-family: Calibri, Arial, sans-serif;
-            font-weight: 300;
+            font: 300 1em/100% Calibri, Arial, sans-serif;
             a {
                 text-decoration: none;
                 color: #fff;
@@ -237,18 +236,14 @@ body {
 
     // [3a] GENERAL CONTENT SECTION STYLES
     h2 {
-        font-family: Oswald, Arial, sans-serif;
-        font-weight: bold;
-        font-size: 0.8em;
+        font: bold 0.8em/100% Oswald, Arial, sans-serif;
         text-transform: uppercase;
         width: 70%;
         letter-spacing: 0.2em;
     }
     p {
-        font-family: Georgia, serif;
+        font: 0.8em/1.5em Georgia, serif;
         width: 70%;
-        font-size: 0.8em;
-        line-height: 1.5em;
         a {
             color: $palette-color-1;
             text-decoration: none;
@@ -302,9 +297,8 @@ body {
 
     // [3d] PROJECT PAGE SPECIFIC STYLES
     small {
-        font-family: Georgia, serif;
+        font: 0.8em/100% Georgia, serif;
         color: dimgray;
-        font-size: 0.8em;
         display: block;
         width: 70%;
         text-align: justify;
@@ -319,8 +313,10 @@ body {
             background: $palette-color-1;
             padding: 0.3em 1em;
             color: #fff;
-            font-weight: 300;
-            font-style: italic;
+            font: {
+                weight: 300;
+                style: italic;
+            }
             text-decoration: none;
             &:hover {
                 color: darken($palette-color-1, 50%);
@@ -336,9 +332,8 @@ body {
     }
     h3 {
         width: 70%;
-        font-family: Oswald, Arial, sans-serif;
+        font: 1em/100% Oswald, Arial, sans-serif;
         text-transform: uppercase;
-        font-size: 1em;
         letter-spacing: 0.2em;
     }
     // [3di] PROJECT IMAGE STYLES
@@ -364,8 +359,7 @@ body {
     .p-description {
         display: block;
         width: 70%;
-        font-family: Georgia, serif;
-        font-size: 0.7em;
+        font: 0.7em/100% Georgia, serif;
         line-height: 1.3em;
         letter-spacing: 0.1em;
     }
@@ -420,12 +414,10 @@ body {
             margin: 0 0.25em 0 0.3em;
         }
         p {
-            font-family: Georgia, serif;
+            font: 1em/1.4em Georgia, serif;
             text-align: left;
             margin: 1em auto;
             width: 90%;
-            font-size: 1em;
-            line-height: 1.4em;
         }
         ul {
             margin: 0 auto;
@@ -463,17 +455,19 @@ body {
 // [3e] CONTACT FORM SPECIFIC STYLES
 #contact-form {
     width: 70%;
-    font-family: Georgia, serif;
-    font-size: 0.8em;
+    font: 0.8em/100% Georgia, serif;
     text-align: left;
     padding: 1em 0 0;
     label {
-        font-family: Calibri, Arial, sans-serif;
+        font: {
+            family: Calibri, Arial, sans-serif;
+            weight: 300;
+        }
         text-align: left;
         display: block;
         margin: 1em 0 0.1em;
         letter-spacing: 0.1em;
-        font-weight: 300;
+        //font-weight: 300;
     }
     input, textarea {
         margin: 0.5em 0;
@@ -505,9 +499,7 @@ body {
         border-radius: 0;
         background: $palette-color-1;
         color: #fff;
-        font-size: 3.5em;
-        font-weight: 300;
-        font-family: 'Dancing Script', cursive;
+        font: 300 3.5em/100% 'Dancing Script', cursive;
         cursor: pointer;
         -webkit-appearance: none;
         -moz-appearance: none;
