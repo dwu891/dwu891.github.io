@@ -10,7 +10,6 @@
     
     <title>Daria Wu - Portfolio</title>
     <link rel="stylesheet" type="text/css" href="css/main.min.css">
-    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     
     <script>
@@ -25,6 +24,38 @@
     </script>
     
     <style>
+        .animated {
+          -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+          -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+        }
+        
+        @-webkit-keyframes fadeIn {
+          from {
+            opacity: 0;
+          }
+
+          to {
+            opacity: 1;
+          }
+        }
+
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+          }
+
+          to {
+            opacity: 1;
+          }
+        }
+
+        .fadeIn {
+          -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+        }
+        
         @media only screen and (max-width: 500px) {
             #mobile-nav {
                 margin-top: 3.4em;
