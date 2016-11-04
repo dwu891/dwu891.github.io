@@ -1,0 +1,49 @@
+---
+layout: default
+title: Miscellaneous - Portfolio
+---
+
+<style>
+.fade-in {
+	opacity:0;  /* make things invisible upon start */
+	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+ 
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+ 
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+}
+    
+.fade-in.one {
+-webkit-animation-delay: 0.3s;
+-moz-animation-delay: 0.3s;
+animation-delay: 0.3s;
+}
+    
+.fade-in.two {
+-webkit-animation-delay: 0.8s;
+-moz-animation-delay: 0.8s;
+animation-delay: 0.8s;
+}
+</style>
+
+<div class="content">
+    <div id="misc">
+        <p class="p-nav"><a class="change-page prev" href="/bandf" rel="bandf">&#8592; prev</a></p>
+        <h3>Miscellaneous Graphics</h3>
+        <div class="p-gallery">
+            <img class="p-img half fade-in one" src="images/cartoon-face-1.png">
+            <img class="p-img half fade-in two" src="images/cartoon-face-2.png">
+        </div>
+        <div class="p-details">
+            <p class="p-description">Here are some fun graphics I made in my spare time. Graphics were made in Adobe Photoshop and Illustrator.</p>
+            <small>SKILLS USED: Graphic Design, Adobe Photoshop</small>
+        </div>
+        <p class="p-nav"><a class="change-page prev" href="/bandf" rel="bandf">&#8592; prev</a></p>
+    </div>
+</div>

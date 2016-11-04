@@ -1,0 +1,42 @@
+---
+layout: default
+title: TANMS - Portfolio
+---
+
+<style>
+.fade-in {
+	opacity:0;  /* make things invisible upon start */
+	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+ 
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+ 
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+}
+    
+.fade-in {
+-webkit-animation-delay: 0.3s;
+-moz-animation-delay: 0.3s;
+animation-delay: 0.3s;
+}
+</style>
+
+<div class="content">
+    <div id="tanms">
+        <p class="p-nav"><a class="change-page prev" href="/acs" rel="acs">&#8592; prev</a><a class="change-page next" href="/bandf" rel="bandf">next &#8594;</a></p>
+        <h3>TANMS Engineering Research Center</h3>
+        <div class="p-gallery">
+            <img class="p-img full row fade-in" src="images/tanms-page.jpg">
+        </div>
+        <div class="p-details">
+            <p class="p-description">TANMS is an engineering research center researching magnetism on the small scale. This site was built from scratch using HTML, CSS, and JavaScript to present news, research materials, and upcoming organization events.</p>
+            <small>SKILLS USED: HTML, CSS, JavaScript</small>
+        </div>
+        <p class="p-nav"><a class="change-page prev" href="/acs" rel="acs">&#8592; prev</a><a class="change-page next" href="/bandf" rel="bandf">next &#8594;</a></p>
+    </div>
+</div>
