@@ -304,6 +304,7 @@ body {
         width: 70%;
         text-align: justify;
         letter-spacing: 0.05em;
+        margin: 3em 0 1em;
     }    
     .p-nav {
         width: 70%;
@@ -360,9 +361,26 @@ body {
     .p-description {
         display: block;
         width: 70%;
-        font: 0.7em/100% Georgia, serif;
+        font: 1em/100% Georgia, serif;
         line-height: 1.3em;
         letter-spacing: 0.1em;
+        margin: 3em 0;
+    }
+    .live-site {
+        font: {
+            family: Oswald, Arial, sans-serif;
+            weight: 200;
+        }
+        background: $palette-color-1;
+        color: #fff;
+        padding: 0.5em 1em;
+        text-decoration: none;
+        border: 3px solid $palette-color-1;
+        text-transform: uppercase;
+        &:hover {
+            background: #fff;
+            color: $palette-color-1;
+        }
     }
     @media only screen and (max-width: 1200px) {
         width: 60%;
@@ -398,7 +416,8 @@ body {
         text-align: center;
         small {
             width: 90%;
-            margin: 0 auto;
+            margin: 3em auto;
+            text-align: center;
         }
         h2 {
             text-align: center;
@@ -440,6 +459,7 @@ body {
         .p-description {
             width: 90%;
             font-size: 1em;
+            margin: 2em auto;
         }
         .p-img {
             float: none;
