@@ -612,14 +612,14 @@ body {
         height: 25px;
     }
     input[name="name"], input[name="email"] {
-        width: 40%;
+        width: 50%;
     }
     input[name="subject"] {
-        width: 70%;
+        width: 100%;
     }
     textarea {
         font-size: 1.3em;
-        width: 70%;
+        width: 100%;
         height: 150px;
     }
     #submit {
