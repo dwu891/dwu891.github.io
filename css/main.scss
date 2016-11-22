@@ -23,7 +23,7 @@
 /********************************
  [1] GENERAL STYLES
 ********************************/
-$palette-color-1: #ED646C;
+$palette-color-1: #eb8c00;
 
 body {
     margin: 0;
@@ -58,7 +58,7 @@ body {
         a {
             color: #fff;
             text-decoration: none;
-            font: 200 1.25em/2em Oswald, Arial, sans-serif;
+            font: 200 1.25em/2em Georgia, serif;
             letter-spacing: 0.1em;
             text-transform: uppercase;
             &:hover {
@@ -69,7 +69,7 @@ body {
     @media only screen and (max-width: 500px) {
         position: fixed;
         width: 100%;
-        margin-top: 3.5em;
+        margin-top: 3.6em;
         z-index: 10;
     }
 }
@@ -84,7 +84,7 @@ body {
         weight: 300;
     }
     text-decoration: none;
-    padding: 0.25em 0 0;
+    padding: 0.15em 0 0;
     float: right;
     margin-right: 1.5em;
     @media only screen and (max-width: 500px) {
@@ -103,11 +103,30 @@ body {
     // General side bar styles
     position: fixed;
     height: 100vh;
-    width: 20%;
+    width: 24%;
     float: left;
-    padding: 3em 0 0 3em;
+    padding: 1em 1em 0;
+    text-align: center;
+    background: url('/images/extra_clean_paper_@2X.png') repeat;
+    .sidebar-content {
+        background: #fff;
+        padding: 2em 3em;
+        height: 84%;
+        box-shadow: 1px 1px 2px #ccc;
+    }
     .back {
         display: none;
+    }
+    #logo {
+        width: 128px;
+        height: 65px;
+        margin: 0 auto;
+        display: block;
+        background: url('/images/logo.png') bottom;
+        background-size: cover;
+        &:hover {
+            background-position: 0 2px;
+        }
     }
     h1 {
         font: bold 3em/100% Oswald, Arial, sans-serif;
@@ -121,12 +140,20 @@ body {
         }
     }
     small {
+        display: block;
+        margin-top: 1em;
+        color: $palette-color-1;
         font: {
-            family: Oswald, Arial, sans-serif;
-            weight: 300;
+            size: 0.8em;
+            family: 'Georgia', serif;
         }
         text-transform: uppercase;
-        letter-spacing: 0.3em;
+        letter-spacing: 0.2em;
+    }
+    p {
+        font-size: 0.9em;
+        font-style: italic;
+        margin: 2em 0;
     }
     a {
         text-decoration: none;
@@ -134,18 +161,17 @@ body {
     }
     ul {
         list-style-type: none;
-        padding: 0;
+        padding: 0.25em 0;
         li {
             padding: 1em 0 0.5em;
             .current-page {
                 color: $palette-color-1;
             }
             &:first-child {
-                border-bottom: 1px solid #dbd9d4;
-                padding-bottom: 0.75em;
+                border-top: 1px solid $palette-color-1;
             }
             &:last-child {
-                border-top: 1px solid #dbd9d4;
+                border-top: 1px solid $palette-color-1;
                 font: {
                     size: 0.8em;
                     style: italic;
@@ -172,11 +198,24 @@ body {
             letter-spacing: 0.3em;
         }
     }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 800px) {
         position: relative;
-        padding: 2em 0 0 2em;
+        padding: 0;
+        width: 35%;
+        background: none;
+        .sidebar-content {
+            box-shadow: none;
+            padding: 2em;
+        }
         h1 {
             font-size: 1.8em;
+        }
+        #logo {
+            width: 60px;
+            height: 30px;
+            &:hover {
+                background-position: 0 0.6px;
+            }
         }
         small {
             font-size: 0.7em;
@@ -190,15 +229,19 @@ body {
         width: 100%;
         overflow: hidden;
         float: none;
-        padding: 1em 0;
-        text-align: center;
+        padding: 1em 0.1em;
+        text-align: left;
         border-bottom: 1px solid #dbd9d4;
         z-index: 20;
-        background-color: #fff;
+        background: #fff;
+        .sidebar-content{
+            padding: 0;
+            box-shadow: none;
+        }
         .back {
             float: left;
             display: inline-block;
-            padding: 0.2em 0 0 1em;
+            padding: 0.2em 0 0.2em 1em;
             text-align: center;
             font: 300 1em/100% Calibri, Arial, sans-serif;
             a {
@@ -210,6 +253,17 @@ body {
                 }
             }
         }
+        #logo {
+            width: 40px;
+            height: 20px;
+            margin: 0 0 0 1em;
+            display: inline-block;
+            background: url('/images/logo.png') bottom;
+            background-size: cover;
+            &:hover {
+                background-position: 0 0.5px;
+            }
+        }
         h1 {
             float: left;
             display: inline-block;
@@ -217,6 +271,9 @@ body {
             margin-left: 1.25em;
         }
         small {
+            display: none;
+        }
+        p {
             display: none;
         }
         ul {
@@ -230,12 +287,21 @@ body {
 ********************************/
 
 .content {
-    width: 70%;
+    width: 73.5%;
     display: inline-block;
     float: right;
-    padding: 4em 0;
+    padding: 4em 0 7em;
 
     // [3a] GENERAL CONTENT SECTION STYLES
+    h1 {
+        margin: 0 auto 1em;
+        padding-bottom: 0.5em;
+        width: 90%;
+        font: 2em/100% 'Georgia', serif;
+        text-align: center;
+        border-bottom: 1px solid $palette-color-1;
+        letter-spacing: 0.1em
+    }
     h2 {
         font: bold 0.8em/100% Oswald, Arial, sans-serif;
         text-transform: uppercase;
@@ -243,8 +309,8 @@ body {
         letter-spacing: 0.2em;
     }
     p {
-        font: 0.8em/1.5em Georgia, serif;
-        width: 70%;
+        font: 1.2em/1.5em Georgia, serif;
+        width: 100%;
         a {
             color: $palette-color-1;
             text-decoration: none;
@@ -257,13 +323,16 @@ body {
     
     // [3b] PORTFOLIO SPECIFIC STYLES
     ul {
-        width: 75%;
+        width: 90%;
         list-style-type: none;
         padding: 0 0 1em;
+        margin: 0 auto;
         li {
             position: relative;
             float: left;
-            width: 33.33%;
+            width: 25%;
+            height: 0;
+            padding-bottom: 25%;
             margin-bottom: -4px;
             z-index: 0;
             .thumb {
@@ -282,14 +351,19 @@ body {
     #about-img {
         width: 70%;
         display: block;
+        margin: 0 auto;
+    }
+    .paragraphs {
+        width: 70%;
+        margin: 0 auto;
     }
     .dropcap {
         color: #fff;
         background: $palette-color-1;
-        font-size: 2em;
+        font-size: 3em;
         float: left;
         padding: 0.2em 0.4em;
-        margin: 0.5em 0.3em 0 0;
+        margin: 0 0.3em 0 0;
     }
     .first-sentence {
         text-transform: uppercase;
@@ -301,26 +375,28 @@ body {
         font: 0.8em/100% Georgia, serif;
         color: dimgray;
         display: block;
-        width: 70%;
+        width: 100%;
         text-align: justify;
         letter-spacing: 0.05em;
         margin: 3em 0 1em;
     }    
     .p-nav {
-        width: 70%;
+        width: 100%;
         min-height: 2em;
         display: block;
-        margin-top: 3em;
         a {
             background: $palette-color-1;
-            padding: 0.3em 1em;
+            padding: 0 1em;
             color: #fff;
+            border: 3px solid $palette-color-1;
             font: {
+                size: 0.8em;
                 weight: 300;
                 style: italic;
             }
             text-decoration: none;
             &:hover {
+                background: #fff;
                 color: darken($palette-color-1, 50%);
                 text-decoration: none;
             }
@@ -333,12 +409,18 @@ body {
         }
     }
     h3 {
-        width: 70%;
-        font: 1em/100% Oswald, Arial, sans-serif;
-        text-transform: uppercase;
+        width: 100%;
+        font: 1.5em/100% 'Georgia', serif;
         letter-spacing: 0.2em;
+        margin: 0 auto;
+        padding: 0.5em 0;
+        border-bottom: 1px solid $palette-color-1;
     }
     // [3di] PROJECT IMAGE STYLES
+    .project {
+        width: 75%;
+        margin: 0 auto;
+    }
     .p-gallery {
         clear: both;
         overflow: auto;
@@ -349,10 +431,10 @@ body {
         vertical-align: top;
     }
     .full {
-        width: 70%;
+        width: 100%;
     }
     .half {
-        width: 35%;
+        width: 50%;
     }
     // [3dii] PROJECT DETAILS STYLES
     .p-details {
@@ -360,15 +442,14 @@ body {
     }
     .p-description {
         display: block;
-        width: 70%;
+        width: 100%;
         font: 1em/100% Georgia, serif;
         line-height: 1.3em;
-        letter-spacing: 0.1em;
         margin: 3em 0;
     }
     .live-site {
         font: {
-            family: Oswald, Arial, sans-serif;
+            family: Georgia, serif;
             weight: 200;
         }
         background: $palette-color-1;
@@ -379,16 +460,32 @@ body {
         text-transform: uppercase;
         &:hover {
             background: #fff;
-            color: $palette-color-1;
+            color: darken($palette-color-1, 50%);
         }
     }
     @media only screen and (max-width: 1200px) {
-        width: 60%;
+        width: 67.5%;
+        
     }
-    @media only screen and (max-width: 768px) {
-        padding: 0;
+    @media only screen and (max-width: 800px) {
+        width: 65%;
+        padding: 2em 0 0;
         h3 {
             width: 90%;
+        }
+        #about-img {
+            width: 90%;
+        }
+        .paragraphs {
+            width: 90%;
+        }
+        p {
+            font-size: 1em;
+        }
+        ul li {
+            width: 33.33%;
+            height: 0;
+            padding-bottom: 33.33%;
         }
         .p-nav {
             width: 90%;
@@ -412,8 +509,17 @@ body {
     @media only screen and (max-width: 500px) {
         float: none;
         width: 100%;
-        margin: 6em auto;
+        margin: 4em auto;
         text-align: center;
+        .project {
+            width: 100%;
+        }
+        h1 {
+            font-size: 1em;
+        }
+        .paragraphs {
+            width: 100%;
+        }
         small {
             width: 90%;
             margin: 3em auto;
@@ -444,12 +550,15 @@ body {
             width: 90%;
             li {
                 width: 48%;
-                margin: 0.5% 1%;
+                height: 0;
+                padding-bottom: 48%;
+                margin: 1%;
             }
         }
         h3 {
-            margin: 3em auto 0;
+            margin: 1.5em auto 0;
             width: 90%;
+            font-size: 1em;
         }
         .p-nav {
             margin-top: 1em;
@@ -475,6 +584,7 @@ body {
 
 // [3e] CONTACT FORM SPECIFIC STYLES
 #contact-form {
+    margin: 0 auto;
     width: 70%;
     font: 0.8em/100% Georgia, serif;
     text-align: left;
@@ -488,7 +598,6 @@ body {
         display: block;
         margin: 1em 0 0.1em;
         letter-spacing: 0.1em;
-        //font-weight: 300;
     }
     input, textarea {
         margin: 0.5em 0;
@@ -532,7 +641,6 @@ body {
     @media only screen and (max-width: 1010px) {
         width: 90%;
         margin: 0 auto;
-        text-align: center;
     }
     @media only screen and (max-width: 600px) {
         width: 90%;

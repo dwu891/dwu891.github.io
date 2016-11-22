@@ -1,30 +1,45 @@
+<style>
+
+    @media only screen and (max-width: 500px) {
+        .content {
+            margin-top: 4em;
+        }
+        #mobile-nav {
+            margin-top: 3.5em;
+        }
+        .sidebar #logo {
+            display: none;
+        }
+    }
+</style>
+
 <ul id="mobile-nav">
-    <li><a class="current-page" href="/">Portfolio</a></li>
+    <li><a href="/">Portfolio</a></li>
     <li><a href="/about">About</a></li>
     <li><a href="/contact">Contact</a></li>
 </ul>
+
 <div class="sidebar">
-    <a id="menu-btn" href="#">Menu</a>
-    <a class="back" href="/">&#8592; Back to Portfolio</a>
-    <a href="/">
-        <h1>
-            <span class="first-name">DARIA</span> 
-            <span class="last-name">WU</span>
-        </h1>
-        <small>Front-End Web Developer</small>
-    </a>
-    <ul>
-        <li>
-            <a class="current-page" href="/">Portfolio</a>
-        </li>
-        <li>
-            <a href="/about">About</a>
-        </li>
-        <li>
-            <a href="/contact">Contact</a>
-        </li>
-        <li>
-            Coded with love by Daria Wu.
-        </li>
-    </ul>
+    <div class="sidebar-content">
+        <a id="menu-btn" href="#">Menu</a>
+        <a class="back" href="/">&#8592; Back to Portfolio</a>
+        <a href="/">
+            <div id="logo"></div>
+            <small>WEB DESIGNER &amp; DEVELOPER</small>
+        </a>
+        <ul>
+            <li>
+                <a href="/">Portfolio</a>
+            </li>
+            <li>
+                <a href="/about">About</a>
+            </li>
+            <li>
+                <a href="/contact">Contact</a>
+            </li>
+            <li>
+                Coded with love by Daria Wu.
+            </li>
+        </ul>
+    </div>
 </div>
