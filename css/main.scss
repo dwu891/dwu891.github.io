@@ -270,6 +270,9 @@ body {
             font-size: 1.25em;
             margin-left: 1.25em;
         }
+        p {
+            display: none;
+        }
         small {
             display: none;
         }
@@ -618,6 +621,9 @@ body {
             width: 90%;
             font-size: 1em;
             margin: 2em auto;
+            -webkit-column-count: 1; /* Chrome, Safari, Opera */
+            -moz-column-count: 1; /* Firefox */
+            column-count: 1;
         }
         .p-img {
             float: none;
