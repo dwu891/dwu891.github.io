@@ -371,9 +371,27 @@ body {
     }
 
     // [3d] PROJECT PAGE SPECIFIC STYLES
+    .skills-list {
+        margin: 0.5em 0;
+        li {
+            font-size: 0.75em;
+            width: auto;
+            background: $palette-color-1;
+            height: 1em;
+            padding: 0.25em 1em;
+            line-height: 1em;
+            color: #fff;
+            letter-spacing: 0.1em;
+            border-radius: 5px;
+            border: 0;
+        }
+    }
+    .bottom {
+        display: none;
+    }
     small {
         font: 0.8em/100% Georgia, serif;
-        color: dimgray;
+        color: $palette-color-1;
         display: block;
         width: 100%;
         text-align: justify;
@@ -390,7 +408,7 @@ body {
             color: #fff;
             border: 3px solid $palette-color-1;
             font: {
-                size: 0.8em;
+                size: 0.75em;
                 weight: 300;
                 style: italic;
             }
@@ -424,6 +442,7 @@ body {
     .p-gallery {
         clear: both;
         overflow: auto;
+        margin-bottom: 3em;
     }
     .p-img {
         float: left;
@@ -438,24 +457,36 @@ body {
     }
     // [3dii] PROJECT DETAILS STYLES
     .p-details {
-        padding-top: 4em;
+        text-align: center;
+        column-count: 2;
     }
     .p-description {
         display: block;
         width: 100%;
-        font: 1em/100% Georgia, serif;
-        line-height: 1.3em;
-        margin: 3em 0;
+        font: 0.9em/100% Georgia, serif;
+        line-height: 1.5em;
+        margin: 1.5em 0;
+        clear: right;
+        text-align: left;
+        -webkit-column-count: 2; /* Chrome, Safari, Opera */
+        -moz-column-count: 2; /* Firefox */
+        column-count: 2;
     }
     .live-site {
+        display: block;
+        width: 48%;
         font: {
             family: Georgia, serif;
             weight: 200;
+            size: 0.75em;
         }
+        clear: both;
         background: $palette-color-1;
         color: #fff;
         padding: 0.5em 1em;
+        margin: 1em auto;
         text-decoration: none;
+        text-align: center;
         border: 3px solid $palette-color-1;
         text-transform: uppercase;
         &:hover {
@@ -497,6 +528,9 @@ body {
         .p-description {
             width: 100%;
             font-size: 1em;
+            -webkit-column-count: 1; /* Chrome, Safari, Opera */
+            -moz-column-count: 1; /* Firefox */
+            column-count: 1;
         }
         .p-img {
             float: none;
@@ -562,10 +596,23 @@ body {
             width: 90%;
             font-size: 1em;
         }
+        .skills-list {
+            margin: 1em auto;
+            text-align: center;
+        }
+        .top {
+            display: none;
+        }
+        .bottom {
+            display: block;
+        }
         .p-nav {
             margin-top: 1em;
             width: 90%;
             font-size: 1em;
+        }
+        .p-details {
+            padding-top: 2em;
         }
         .p-description {
             width: 90%;
