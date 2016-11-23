@@ -599,6 +599,7 @@ body {
             font-size: 1em;
         }
         .skills-list {
+            padding-bottom: 4em;
             margin: 1em auto;
             text-align: center;
         }
@@ -619,7 +620,7 @@ body {
         .p-description {
             width: 90%;
             font-size: 1em;
-            margin: 2em auto;
+            margin: 0 auto 2em;
             -webkit-column-count: 1; /* Chrome, Safari, Opera */
             -moz-column-count: 1; /* Firefox */
             column-count: 1;
