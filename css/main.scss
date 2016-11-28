@@ -128,17 +128,6 @@ body {
             background-position: 0 2px;
         }
     }
-    h1 {
-        font: bold 3em/100% Oswald, Arial, sans-serif;
-        letter-spacing: 0.1em;
-        margin: 0;
-        .first-name {
-            color: $palette-color-1;
-        }
-        .last-name {
-            font-weight: 300;
-        }
-    }
     small {
         display: block;
         margin-top: 1em;
@@ -304,12 +293,6 @@ body {
         text-align: center;
         border-bottom: 1px solid $palette-color-1;
         letter-spacing: 0.1em
-    }
-    h2 {
-        font: bold 0.8em/100% Oswald, Arial, sans-serif;
-        text-transform: uppercase;
-        width: 70%;
-        letter-spacing: 0.2em;
     }
     p {
         font: 1.2em/1.5em Georgia, serif;
@@ -679,12 +662,12 @@ body {
     }
     #submit {
         height: 80px;
-        padding: 0 1em;
+        padding: 0.2em 1em 0 0.7em;
         border: 0;
         border-radius: 0;
         background: $palette-color-1;
         color: #fff;
-        font: 300 3.5em/100% 'Dancing Script', cursive;
+        font: 300 3.5em/100% 'Great Vibes', cursive;
         cursor: pointer;
         -webkit-appearance: none;
         -moz-appearance: none;
