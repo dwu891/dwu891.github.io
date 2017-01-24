@@ -1,26 +1,6 @@
 
-
-/* 
-    ==TABLE OF CONTENTS==
-
-    [1] GENERAL STYLES
-    [2] SIDEBAR STYLES
-        [2a] MOBILE NAVIGATION STYLES
-        [2b] DESKTOP & TABLET NAVIGATION STYLES
-    [3] CONTENT STYLES
-        [3a] GENERAL CONTENT SECTION STYLES
-        [3b] PORTFOLIO SPECIFIC STYLES
-        [3c] ABOUT PAGE SPECIFIC STYLES
-        [3d] PROJECT PAGE SPECIFIC STYLES
-            [3di] PROJECT IMAGE STYLES
-            [3dii] PROJECT DETAILS STYLES
-        [3e] CONTACT PAGE SPECIFIC STYLES
-
-*/
-
-
 /********************************
- [1] GENERAL STYLES
+ GENERAL STYLES
 ********************************/
 $palette-color-1: #eb8c00;
 
@@ -29,11 +9,8 @@ body {
 }
 
 /********************************
- [2] SIDEBAR STYLES
+ SIDEBAR STYLES
 ********************************/
-
-/* [2a] MOBILE NAVIGATION STYLES */
-
 // Styles for mobile dropdown menu
 // Mobile navigation menu only appears for screens of width 500px or less
 #mobile-nav {
@@ -57,7 +34,12 @@ body {
         a {
             color: #fff;
             text-decoration: none;
-            font: 200 1.25em/2em Georgia, serif;
+            font: {
+              weight: 200;
+              size: 1.25em;
+              family: Georgia, serif;
+            }
+            line-height: 2em; 
             letter-spacing: 0.1em;
             text-transform: uppercase;
             &:hover {
@@ -91,8 +73,6 @@ body {
     }
 }
 
-
-/* [2b] DESKTOP & TABLET NAVIGATION STYLES */
 
 // Styles for text and links in sidebar
 // Sidebar appears for screen widths greater than 500px
@@ -169,7 +149,11 @@ body {
                 padding-top: 2em;
             }
             a {
-                font: 300 0.8em/100% Georgia, serif;
+                font: {
+                  weight: 300; 
+                  size: 0.8em;
+                  family: Georgia, serif;
+                }
                 text-decoration: none;
                 color: #000;
                 &:hover {
@@ -232,7 +216,11 @@ body {
             display: inline-block;
             padding: 0.2em 0 0.2em 1em;
             text-align: center;
-            font: 300 1em/100% Calibri, Arial, sans-serif;
+            font: {
+              weight: 300; 
+              size: 1em;
+              family: Calibri, Arial, sans-serif;
+            }
             a {
                 text-decoration: none;
                 color: #fff;
@@ -275,7 +263,7 @@ body {
 }
 
 /********************************
- [3] CONTENT STYLES
+ CONTENT STYLES
 ********************************/
 
 .content {
@@ -283,19 +271,25 @@ body {
     display: inline-block;
     float: right;
     padding: 4em 0 7em;
-
-    // [3a] GENERAL CONTENT SECTION STYLES
     h1 {
         margin: 0 auto 1em;
         padding-bottom: 0.5em;
         width: 90%;
-        font: 2em/100% 'Georgia', serif;
+        font: {
+          weight: 400;
+          size: 2em;
+          family: 'Georgia', serif;
+        }
         text-align: center;
         border-bottom: 1px solid $palette-color-1;
         letter-spacing: 0.1em
     }
     p {
-        font: 1.2em/1.5em Georgia, serif;
+        font: {
+          size: 1.2em;
+          family: Georgia, serif;
+        }
+        line-height: 1.5em; 
         width: 100%;
         a {
             color: $palette-color-1;
@@ -306,13 +300,13 @@ body {
             }
         }
     }
-    
-    // [3b] PORTFOLIO SPECIFIC STYLES
+
     ul {
         width: 90%;
         list-style-type: none;
         padding: 0 0 1em;
         margin: 0 auto;
+        overflow: auto;
         li {
             position: relative;
             float: left;
@@ -332,8 +326,13 @@ body {
             }
         }
     }
+  
+   #note {
+      width: 90%;
+      display: block;
+      margin: 0 auto;
+    }
 
-    // [3c] ABOUT PAGE SPECIFIC STYLES
     #about-img {
         width: 70%;
         display: block;
@@ -356,7 +355,6 @@ body {
         letter-spacing: 0.2em;
     }
 
-    // [3d] PROJECT PAGE SPECIFIC STYLES
     .skills-list {
         margin: 0.5em 0;
         li {
@@ -376,7 +374,10 @@ body {
         display: none;
     }
     small {
-        font: 0.8em/100% Georgia, serif;
+        font: {
+          size: 0.8em;
+          family: Georgia, serif;
+        }
         color: $palette-color-1;
         display: block;
         width: 100%;
@@ -414,13 +415,17 @@ body {
     }
     h3 {
         width: 100%;
-        font: 1.5em/100% 'Georgia', serif;
+        font: {
+          weight: 400;
+          size: 1.5em;
+          family: 'Georgia', serif;
+        }
         letter-spacing: 0.2em;
         margin: 0 auto;
         padding: 0.5em 0;
         border-bottom: 1px solid $palette-color-1;
     }
-    // [3di] PROJECT IMAGE STYLES
+
     .project {
         width: 75%;
         margin: 0 auto;
@@ -441,14 +446,17 @@ body {
     .half {
         width: 50%;
     }
-    // [3dii] PROJECT DETAILS STYLES
+
     .p-details {
         text-align: center;
     }
     .p-description {
         display: block;
         width: 100%;
-        font: 0.9em/100% Georgia, serif;
+        font: {
+          size: 0.9em;
+          family: Georgia, serif;
+        }
         line-height: 1.5em;
         margin: 1.5em 0;
         clear: right;
@@ -561,7 +569,11 @@ body {
             margin: 0 0.25em 0 0.3em;
         }
         p {
-            font: 1em/1.4em Georgia, serif;
+            font: {
+              size: 1em;
+              family: Georgia, serif;
+            }
+            line-height: 1.4em; 
             text-align: left;
             margin: 1em auto;
             width: 90%;
@@ -620,11 +632,14 @@ body {
     }
 }
 
-// [3e] CONTACT FORM SPECIFIC STYLES
+
 #contact-form {
     margin: 0 auto;
     width: 70%;
-    font: 0.8em/100% Georgia, serif;
+    font: {
+      size: 0.8em;
+      family: Georgia, serif;
+    }
     text-align: left;
     padding: 1em 0 0;
     label {
@@ -667,7 +682,11 @@ body {
         border-radius: 0;
         background: $palette-color-1;
         color: #fff;
-        font: 300 3.5em/100% 'Great Vibes', cursive;
+        font: {
+          weight: 300; 
+          size: 3.5em;
+          size: 'Great Vibes', cursive;
+        }
         cursor: pointer;
         -webkit-appearance: none;
         -moz-appearance: none;

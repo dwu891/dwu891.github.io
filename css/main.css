@@ -1,30 +1,12 @@
-/* 
-    ==TABLE OF CONTENTS==
-
-    [1] GENERAL STYLES
-    [2] SIDEBAR STYLES
-        [2a] MOBILE NAVIGATION STYLES
-        [2b] DESKTOP & TABLET NAVIGATION STYLES
-    [3] CONTENT STYLES
-        [3a] GENERAL CONTENT SECTION STYLES
-        [3b] PORTFOLIO SPECIFIC STYLES
-        [3c] ABOUT PAGE SPECIFIC STYLES
-        [3d] PROJECT PAGE SPECIFIC STYLES
-            [3di] PROJECT IMAGE STYLES
-            [3dii] PROJECT DETAILS STYLES
-        [3e] CONTACT PAGE SPECIFIC STYLES
-
-*/
 /********************************
- [1] GENERAL STYLES
+ GENERAL STYLES
 ********************************/
 body {
   margin: 0; }
 
 /********************************
- [2] SIDEBAR STYLES
+ SIDEBAR STYLES
 ********************************/
-/* [2a] MOBILE NAVIGATION STYLES */
 #mobile-nav {
   display: none;
   margin: 0;
@@ -44,7 +26,10 @@ body {
     #mobile-nav li a {
       color: #fff;
       text-decoration: none;
-      font: 200 1.25em/2em Georgia, serif;
+      font-weight: 200;
+      font-size: 1.25em;
+      font-family: Georgia, serif;
+      line-height: 2em;
       letter-spacing: 0.1em;
       text-transform: uppercase; }
       #mobile-nav li a:hover {
@@ -69,7 +54,6 @@ body {
     #menu-btn {
       display: inline-block; } }
 
-/* [2b] DESKTOP & TABLET NAVIGATION STYLES */
 .sidebar {
   position: fixed;
   height: 100vh;
@@ -126,7 +110,9 @@ body {
         margin-top: 0.5em;
         padding-top: 2em; }
       .sidebar ul li a {
-        font: 300 0.8em/100% Georgia, serif;
+        font-weight: 300;
+        font-size: 0.8em;
+        font-family: Georgia, serif;
         text-decoration: none;
         color: #000; }
         .sidebar ul li a:hover {
@@ -178,7 +164,9 @@ body {
         display: inline-block;
         padding: 0.2em 0 0.2em 1em;
         text-align: center;
-        font: 300 1em/100% Calibri, Arial, sans-serif; }
+        font-weight: 300;
+        font-size: 1em;
+        font-family: Calibri, Arial, sans-serif; }
         .sidebar .back a {
           text-decoration: none;
           color: #fff;
@@ -209,7 +197,7 @@ body {
         display: none; } }
 
 /********************************
- [3] CONTENT STYLES
+ CONTENT STYLES
 ********************************/
 .content {
   width: 73.5%;
@@ -220,12 +208,16 @@ body {
     margin: 0 auto 1em;
     padding-bottom: 0.5em;
     width: 90%;
-    font: 2em/100% 'Georgia', serif;
+    font-weight: 400;
+    font-size: 2em;
+    font-family: 'Georgia', serif;
     text-align: center;
     border-bottom: 1px solid #eb8c00;
     letter-spacing: 0.1em; }
   .content p {
-    font: 1.2em/1.5em Georgia, serif;
+    font-size: 1.2em;
+    font-family: Georgia, serif;
+    line-height: 1.5em;
     width: 100%; }
     .content p a {
       color: #eb8c00;
@@ -237,7 +229,8 @@ body {
     width: 90%;
     list-style-type: none;
     padding: 0 0 1em;
-    margin: 0 auto; }
+    margin: 0 auto;
+    overflow: auto; }
     .content ul li {
       position: relative;
       float: left;
@@ -253,6 +246,10 @@ body {
         z-index: 10; }
       .content ul li .thumb-hover {
         width: 100%; }
+  .content #note {
+    width: 90%;
+    display: block;
+    margin: 0 auto; }
   .content #about-img {
     width: 70%;
     display: block;
@@ -286,7 +283,8 @@ body {
   .content .bottom {
     display: none; }
   .content small {
-    font: 0.8em/100% Georgia, serif;
+    font-size: 0.8em;
+    font-family: Georgia, serif;
     color: #eb8c00;
     display: block;
     width: 100%;
@@ -316,7 +314,9 @@ body {
       float: right; }
   .content h3 {
     width: 100%;
-    font: 1.5em/100% 'Georgia', serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    font-family: 'Georgia', serif;
     letter-spacing: 0.2em;
     margin: 0 auto;
     padding: 0.5em 0;
@@ -341,7 +341,8 @@ body {
   .content .p-description {
     display: block;
     width: 100%;
-    font: 0.9em/100% Georgia, serif;
+    font-size: 0.9em;
+    font-family: Georgia, serif;
     line-height: 1.5em;
     margin: 1.5em 0;
     clear: right;
@@ -436,7 +437,9 @@ body {
         padding: 0.05em 0.2em;
         margin: 0 0.25em 0 0.3em; }
       .content p {
-        font: 1em/1.4em Georgia, serif;
+        font-size: 1em;
+        font-family: Georgia, serif;
+        line-height: 1.4em;
         text-align: left;
         margin: 1em auto;
         width: 90%; }
@@ -485,7 +488,8 @@ body {
 #contact-form {
   margin: 0 auto;
   width: 70%;
-  font: 0.8em/100% Georgia, serif;
+  font-size: 0.8em;
+  font-family: Georgia, serif;
   text-align: left;
   padding: 1em 0 0; }
   #contact-form label {
@@ -520,7 +524,9 @@ body {
     border-radius: 0;
     background: #eb8c00;
     color: #fff;
-    font: 300 3.5em/100% 'Great Vibes', cursive;
+    font-weight: 300;
+    font-size: 3.5em;
+    font-size: 'Great Vibes', cursive;
     cursor: pointer;
     -webkit-appearance: none;
     -moz-appearance: none;
