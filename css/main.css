@@ -526,7 +526,7 @@ body {
     color: #fff;
     font-weight: 300;
     font-size: 3.5em;
-    font-size: 'Great Vibes', cursive;
+    font-family: 'Great Vibes', cursive;
     cursor: pointer;
     -webkit-appearance: none;
     -moz-appearance: none;
