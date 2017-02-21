@@ -1,17 +1,63 @@
-<style>
+  <style>
+    .fade-in {
+      opacity:0;
 
-    @media only screen and (max-width: 500px) {
-        .content {
-            margin-top: 4em;
-        }
-        #mobile-nav {
-            margin-top: 3.5em;
-        }
-        .sidebar #logo {
-            display: none;
-        }
+      -webkit-animation:fadeIn ease-in 1;
+      -moz-animation:fadeIn ease-in 1;
+      animation:fadeIn ease-in 1;
+
+      -webkit-animation-fill-mode:forwards;
+      -moz-animation-fill-mode:forwards;
+      animation-fill-mode:forwards;
+
+      -webkit-animation-duration:0.8s;
+      -moz-animation-duration:0.8s;
+      animation-duration:0.8s;
     }
-</style>
+
+    .fade-in.one {
+      -webkit-animation-delay: 0.3s;
+      -moz-animation-delay: 0.3s;
+      animation-delay: 0.3s;
+    }
+
+    .fade-in.two {
+      -webkit-animation-delay: 0.8s;
+      -moz-animation-delay: 0.8s;
+      animation-delay: 0.8s;
+    }
+
+    .fade-in.three {
+      -webkit-animation-delay: 1.3s;
+      -moz-animation-delay: 1.3s;
+      animation-delay: 1.3s;
+    }
+
+    .fade-in.four {
+      -webkit-animation-delay: 1.8s;
+      -moz-animation-delay: 1.8s;
+      animation-delay: 1.8s;
+    }
+  </style>
+
+  <style>
+
+      @media only screen and (max-width: 500px) {
+          .content {
+              margin-top: 4em;
+          }
+          #mobile-nav {
+              margin-top: 3.5em;
+          }
+          .sidebar #logo {
+              display: none;
+          }
+      }
+  </style>
+
+</head>
+
+<body>
 
 <ul id="mobile-nav">
     <li><a href="/">Portfolio</a></li>
