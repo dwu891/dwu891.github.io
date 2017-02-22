@@ -354,6 +354,26 @@ body {
         text-transform: uppercase;
         letter-spacing: 0.2em;
     }
+    #btn-container {
+      padding: 2em 0;
+      width: 100%;
+      text-align: center;
+    }
+    #resume-button {
+      position: relative;
+      padding: 1em 2em;
+      color: white;
+      background: $palette-color-1;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 0.2em;
+      border: 3px solid $palette-color-1;
+      &:hover {
+        background: white;
+        color: $palette-color-1;
+      }
+    }
 
     .skills-list {
         margin: 0.5em 0;
