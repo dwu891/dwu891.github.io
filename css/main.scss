@@ -325,9 +325,10 @@ body {
         }
         @media only screen and (max-width: 800px) {
           flex-basis: 32.33%;
+          border: 1px solid #ddd;
         }        
         @media only screen and (max-width: 500px) {
-          flex-basis: 49%;
+          flex-basis: 48%;
         }
       }
     }

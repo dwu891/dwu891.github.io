@@ -308,11 +308,12 @@ body {
 @media only screen and (max-width: 800px) {
   .content .portfolio .thumb-container {
     flex-basis: 32.33%;
+    border: 1px solid #ddd;
   }
 }
 @media only screen and (max-width: 500px) {
   .content .portfolio .thumb-container {
-    flex-basis: 49%;
+    flex-basis: 48%;
   }
 }
 .content #note {
