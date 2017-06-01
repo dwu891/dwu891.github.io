@@ -301,30 +301,35 @@ body {
         }
     }
 
-    ul {
-        width: 90%;
-        list-style-type: none;
-        padding: 0 0 1em;
-        margin: 0 auto;
-        overflow: auto;
-        li {
-            position: relative;
-            float: left;
-            width: 24%;
-            height: 0;
-            padding-bottom: 24%;
-            margin: 0.5%;
-            z-index: 0;
-            .thumb {
-                position: absolute;
-                width: 100%;
-                align-self: center;
-                z-index: 10;
-            }
-            .thumb-hover {
-                width: 100%;
-            }
+    .portfolio {
+      width: 90%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      padding: 0 0 1em;
+      margin: 0 auto;
+      .thumb-container {
+        flex-basis: 24%;
+        z-index: 0;
+        margin: 2px 0.5%;
+        position: relative;
+        .thumb {
+            position: absolute;
+            width: 100%;
+            align-self: center;
+            z-index: 10;
         }
+        .thumb-hover {
+            width: 100%;
+        }
+        @media only screen and (max-width: 800px) {
+          flex-basis: 32.33%;
+        }        
+        @media only screen and (max-width: 500px) {
+          flex-basis: 49%;
+        }
+      }
     }
   
    #note {
@@ -376,19 +381,23 @@ body {
     }
 
     .skills-list {
-        margin: 0.5em 0;
-        li {
-            font-size: 0.75em;
-            width: auto;
-            background: $palette-color-1;
-            height: 1em;
-            padding: 0.25em 1em;
-            line-height: 1em;
-            color: #fff;
-            letter-spacing: 0.1em;
-            border-radius: 5px;
-            border: 0;
-        }
+      list-style-type: none;
+      margin: 0.5em 0;
+      padding: 0;
+      li {
+        float: left;
+        margin: 0.5%;
+        font-size: 0.75em;
+        width: auto;
+        background: $palette-color-1;
+        height: 1em;
+        padding: 0.25em 1em;
+        line-height: 1em;
+        color: #fff;
+        letter-spacing: 0.1em;
+        border-radius: 5px;
+        border: 0;
+      }
     }
     .bottom {
         display: none;

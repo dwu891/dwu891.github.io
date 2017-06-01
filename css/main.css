@@ -281,30 +281,39 @@ body {
 .content p a:hover {
   text-decoration: underline;
 }
-.content ul {
+.content .portfolio {
   width: 90%;
-  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   padding: 0 0 1em;
   margin: 0 auto;
-  overflow: auto;
 }
-.content ul li {
-  position: relative;
-  float: left;
-  width: 24%;
-  height: 0;
-  padding-bottom: 24%;
-  margin: 0.5%;
+.content .portfolio .thumb-container {
+  flex-basis: 24%;
   z-index: 0;
+  margin: 2px 0.5%;
+  position: relative;
 }
-.content ul li .thumb {
+.content .portfolio .thumb-container .thumb {
   position: absolute;
   width: 100%;
   align-self: center;
   z-index: 10;
 }
-.content ul li .thumb-hover {
+.content .portfolio .thumb-container .thumb-hover {
   width: 100%;
+}
+@media only screen and (max-width: 800px) {
+  .content .portfolio .thumb-container {
+    flex-basis: 32.33%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .content .portfolio .thumb-container {
+    flex-basis: 49%;
+  }
 }
 .content #note {
   width: 90%;
@@ -353,9 +362,13 @@ body {
   color: #eb8c00;
 }
 .content .skills-list {
+  list-style-type: none;
   margin: 0.5em 0;
+  padding: 0;
 }
 .content .skills-list li {
+  float: left;
+  margin: 0.5%;
   font-size: 0.75em;
   width: auto;
   background: #eb8c00;
