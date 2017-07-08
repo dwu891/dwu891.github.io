@@ -1,0 +1,36 @@
+body {
+	font-family: Verdana, sans-serif;
+}
+
+label {
+	display: inline-block;
+	float: left;
+	clear: left;
+	width: 100px;
+	margin: 5px 0;
+	padding: 0.25em 0;
+}
+
+input.field {
+	margin: 5px;
+	display: inline-block;
+	float: left;
+	border: 2px solid #000;
+	padding: 0.25em;
+}
+
+button {
+	display: block;
+	clear: left;
+	background: #000;
+	border: 2px solid #333;
+	border-radius: 10px;
+	font-weight: bold;
+	color: #fff;
+	padding: 0.5em 1em;
+	cursor: pointer;
+}
+
+#errors {
+	color: #f00;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Simple Login Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<h1>Login</h1>
+
+	<form>
+		<!--make sure for attribute of label matches id of associated input field-->
+		<label for="username">User name: </label>
+		<input id="username" class="field" type="text" name="usernamefield">
+
+		<label for="password">Password: </label>
+		<input id="password" class="field" type="password" name="passwordfield">
+
+		<button type="submit">Log In</button>
+	</form>
+
+	<p id="errors"></p>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="functions.js"></script>
+</body>
+
+</html>
